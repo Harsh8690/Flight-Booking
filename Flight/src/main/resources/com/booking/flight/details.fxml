@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="details_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="872.0" style="-fx-background-color: #F0FFF0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.booking.flight.detailsController">
+   <children>
+      <Label layoutX="232.0" layoutY="51.0" text="Book the flight and fill the details">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="150.0" text="First name:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="150.0" text="Last name:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="200.0" prefHeight="21.0" prefWidth="59.0" text="Source:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="202.0" text="Destination:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="249.0" text="Arriving time:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="251.0" text="Departure time:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="295.0" text="Class:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="297.0" text="Persons:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="389.0" text="Price:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="first_name" layoutX="287.0" layoutY="148.0" />
+      <TextField fx:id="last_name" layoutX="682.0" layoutY="148.0" />
+      <TextField fx:id="source" layoutX="287.0" layoutY="200.0" />
+      <TextField fx:id="destination" layoutX="682.0" layoutY="200.0" />
+      <TextField fx:id="arrr_time" layoutX="287.0" layoutY="249.0" />
+      <TextField fx:id="depart_time" layoutX="682.0" layoutY="249.0" />
+      <TextField fx:id="persons" layoutX="682.0" layoutY="295.0" />
+      <ComboBox fx:id="class_box" layoutX="286.0" layoutY="295.0" prefWidth="150.0" promptText="            - select -" />
+      <TextField fx:id="price" layoutX="287.0" layoutY="387.0" />
+      <Button fx:id="payment" layoutX="626.0" layoutY="396.0" mnemonicParsing="false" onAction="#pay" prefHeight="32.0" prefWidth="112.0" style="-fx-background-color: #B0C4DE;" text="Pay">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="626.0" layoutY="456.0" mnemonicParsing="false" onAction="#cancle" prefHeight="39.0" prefWidth="112.0" style="-fx-background-color: #E6E6FA;" text="Cancle">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="142.0" layoutY="342.0" text="Flight no:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="342.0" text="Flight name:">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="flight_no" layoutX="287.0" layoutY="340.0" />
+      <TextField fx:id="flight_name" layoutX="682.0" layoutY="340.0" />
+      <Label fx:id="label" layoutX="710.0" layoutY="86.0" />
+   </children>
+</Pane>

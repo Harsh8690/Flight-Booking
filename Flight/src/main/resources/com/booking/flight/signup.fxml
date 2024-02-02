@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="signup_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="872.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.booking.flight.signup_controller">
+   <children>
+      <ImageView fitHeight="86.0" fitWidth="225.0" layoutX="206.0" layoutY="24.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ff.jpg" />
+         </image></ImageView>
+      <Label layoutX="396.0" layoutY="40.0" text="Signup ">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="170.0" text="Name: ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="223.0" text="Username:  ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="272.0" text="Password:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="206.0" layoutY="322.0" text="Mobile No. :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="388.0" layoutY="390.0" mnemonicParsing="false" onAction="#signin" style="-fx-background-color: #7B68EE;" text="signin" />
+      <TextField fx:id="name" alignment="CENTER" layoutX="343.0" layoutY="171.0" />
+      <TextField fx:id="username" alignment="CENTER" layoutX="343.0" layoutY="225.0" />
+      <TextField fx:id="password" alignment="CENTER" layoutX="343.0" layoutY="276.0" />
+      <TextField fx:id="mobile" alignment="CENTER" layoutX="343.0" layoutY="323.0" />
+      <Label layoutX="235.0" layoutY="472.0" prefHeight="20.0" prefWidth="190.0" text="If you have already account?">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="425.0" layoutY="470.0" mnemonicParsing="false" onAction="#go_login" style="-fx-background-color: #7B68EE;" text="login" />
+      <Label fx:id="label" alignment="CENTER" layoutX="266.0" layoutY="434.0" prefHeight="17.0" prefWidth="229.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

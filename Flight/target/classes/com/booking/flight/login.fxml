@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="login_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="577.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.booking.flight.login_controller">
+   <children>
+      <ImageView fitHeight="583.0" fitWidth="889.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fl.jpg" />
+         </image></ImageView>
+      <TextField fx:id="login_user" alignment="CENTER" layoutX="316.0" layoutY="208.0" prefHeight="25.0" prefWidth="240.0" promptText="username" style="-fx-background-color: white;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="login_password" alignment="CENTER" layoutX="317.0" layoutY="281.0" promptText="password">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="410.0" layoutY="355.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #008080;" text="Login" />
+      <Label layoutX="331.0" layoutY="473.0" text="Create account here ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="466.0" layoutY="471.0" mnemonicParsing="false" onAction="#signup" style="-fx-background-color: #008080;" text="signup" />
+      <Label alignment="CENTER" layoutX="274.0" layoutY="46.0" prefHeight="17.0" prefWidth="386.0" text="Welcome To Airlines">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="liable" alignment="CENTER" layoutX="292.0" layoutY="418.0" prefHeight="17.0" prefWidth="314.0" />
+      <ImageView fitHeight="53.0" fitWidth="32.0" layoutX="316.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@l1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="319.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@l2.png" />
+         </image></ImageView>
+   </children>
+</Pane>

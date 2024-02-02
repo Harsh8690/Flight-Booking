@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="flights_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0"
+      prefWidth="872.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.booking.flight.flight_controller">
+   <children>
+      <ImageView fitHeight="590.0" fitWidth="872.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@book.jpg" />
+         </image></ImageView>
+      <ComboBox fx:id="source" layoutX="34.0" layoutY="69.0" prefWidth="150.0" promptText="               source" style="-fx-background-color: white;" />
+      <ComboBox fx:id="destination" layoutX="214.0" layoutY="69.0" prefWidth="150.0" promptText="          destination" style="-fx-background-color: white;" />
+      <Button fx:id="search" layoutX="413.0" layoutY="67.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: #B0C4DE;" text="Search">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableview" layoutX="34.0" layoutY="139.0" prefHeight="404.0" prefWidth="659.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn fx:id="fNo" prefWidth="84.0" text="Floight No:" />
+          <TableColumn fx:id="fName" prefWidth="93.0" text="Flight Name" />
+            <TableColumn fx:id="fSource" prefWidth="82.0" text="Source" />
+            <TableColumn fx:id="fDepart" text="Departure" />
+            <TableColumn fx:id="deptTime" prefWidth="97.0" text="Dept Time" />
+            <TableColumn fx:id="arrTime" prefWidth="126.0" text="Arriving Time" />
+            <TableColumn fx:id="charge" prefWidth="96.0" text="Charge" />
+        </columns>
+      </TableView>
+      <Button layoutX="743.0" layoutY="508.0" mnemonicParsing="false" onAction="#next" prefHeight="35.0" prefWidth="80.0" style="-fx-background-color: #B0C4DE;" text="Next">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
